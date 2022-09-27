@@ -47,9 +47,7 @@ Sito commercio elettronico
 - Ogni prodotto deve avere una foto, il nome del produttore, e una descrizione sintetica e completa
 - Il pagamento deve essere effettuato con carte di credito
 
----
-
-## Chi sono gli Stakeholder?
+#### Chi sono gli Stakeholder?
 
 Essi sono tutte le persone che sono influenzate dall'attivita' di un'organizzazione
 
@@ -79,7 +77,3 @@ La documentazione inizia gia' dalle prime fasi, come per esempio dalla nomenclat
 - PascalCase
 - camelCase
 - snake_case
-
-## Standard per la creazione della documentazione
-
----
