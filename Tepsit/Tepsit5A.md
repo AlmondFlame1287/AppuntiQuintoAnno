@@ -97,3 +97,60 @@ Il **client** e' un terminale che ha la funzione di cliente;
 Il **server** e' un terminale che ha la funzione di servente, praticamente fornisce dei servizi;
 
 L'**Actor** e' un terminale che ha le funzioni di ambo le parti.
+
+La comunicazioni in questo modello avviene tramite [Socket](), formato da **"Indirizzo IP:Numero della porta"**
+
+## Cluster di PC
+
+---
+
+I calcolatori lavorano in parallelo per ottenere una gran potenza di calcolo senza aver bisogno di spendere troppo.
+
+Struemnto per creazione Cluster: **ParallelKnoppix**
+
+## Architettura WEB-centrie
+
+---
+
+Sistema distribuito gestito tramite il web
+
+## Middleware
+
+---
+
+E' un software che si pone come livello intermedio che si pone tra applicazioni e sistema operativo, che gestice alcune operazioni.
+
+### Servizi
+
+Fornitura di qualche tipo di dato
+
+## Modello object-based
+
+---
+
+Ogni risorsa viene vista come oggetto, dunque vi e' un gestore che le distribuisce. Questo tipo di modello e' completamente distribuito.
+
+## Architettura a strati
+
+---
+
+Suddivisa in:
+
+- Front-end - GUI per l'utente (Presentation Layer)
+- Middle tier - Elaborazione (Resource Managment Layer)
+- Back-end - Accesso ai dati/risorse (Business Logic Layer)
+
+### Architettura a 1 livello
+
+Un computer con un solo utente e una sola applicazione aperta;
+
+### Architettura a 2 livelli
+
+Architettura simile client-server. Due modi di implementazione:
+
+- #### Thick-client
+
+  Livello di presentazione ed elaborazione a carico del client, lato di accesso ai dati rimane sul server
+
+- #### Thin-client
+  Livello di presentazione a carico del client, lato di elaborazione e accesso sul server
