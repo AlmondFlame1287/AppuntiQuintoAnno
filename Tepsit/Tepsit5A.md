@@ -98,7 +98,7 @@ Il **server** e' un terminale che ha la funzione di servente, praticamente forni
 
 L'**Actor** e' un terminale che ha le funzioni di ambo le parti.
 
-La comunicazioni in questo modello avviene tramite [Socket](), formato da **"Indirizzo IP:Numero della porta"**
+La comunicazioni in questo modello avviene tramite [Socket](./Tepsit5A.md#socket), formato da **"Indirizzo IP:Numero della porta"**
 
 ## Cluster di PC
 
@@ -154,3 +154,17 @@ Architettura simile client-server. Due modi di implementazione:
 
 - #### Thin-client
   Livello di presentazione a carico del client, lato di elaborazione e accesso sul server
+
+## Socket
+
+---
+
+Un socket consente di comunicare attraverso la rete utilizzando il TCP/IP, ed e' quindi parte integrante del protocollo.
+
+### Socket di benvenuto
+
+Socket in attesa di nuove connessioni; trasferisce la richiesta su un socket di connessione
+
+### Socket di connessione
+
+Socket che gestisce la connessione dal suo inizio al suo decesso;

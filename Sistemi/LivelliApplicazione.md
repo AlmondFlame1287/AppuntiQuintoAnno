@@ -45,7 +45,7 @@ Il browser recupera informazioni sul sito in base all['**URL**](./LivelliApplica
 Secondo le regole del protocollo la comunicazione e' formata da richiesta e risposta. Il meccanismo si dirama in:
 
 1. Apertura connessione TCP
-2. Browser chiede una risorsa attraverso il [Socket]()
+2. Browser chiede una risorsa attraverso il [Socket](../Tepsit/Tepsit5A.md#socket)
 3. Il server risponde
 
    - Con una risposta positiva
