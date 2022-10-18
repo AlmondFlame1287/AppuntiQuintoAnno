@@ -31,21 +31,21 @@ Esempio:
 
 - Web
 
-[**Per la spiegazione completa**](./Tepsit5A.md#client-server)
-
 ## XML
 
 ---
 
-Usato per la descrizione dei dati con dei tag <br>
-[**Per la spiegazione completa**](./XML.md)
+Usato per la descrizione dei dati con dei tag
+
+**Un documento XML che rispetta le regole sintattiche si dice ben formato (well-formed).**
+
+**Un documento XML che rispetta le regole sintattiche e le regole semantiche si dice valido**
 
 ## Servlet
 
 ---
 
 Sorta di sottoprogrammi che possono andare in parallelo <br>
-[**Per la spiegazione completa**](./Servelet.md)
 
 ---
 
@@ -168,3 +168,38 @@ Socket in attesa di nuove connessioni; trasferisce la richiesta su un socket di 
 ### Socket di connessione
 
 Socket che gestisce la connessione dal suo inizio al suo decesso;
+
+## Concetto di socket
+
+Il concetto di socket e' stato sviluppato sulla base di I/O sul file. Ogni sistema operativo mette a disposizione delle proprie API per la connessione tra due socket.
+
+## Famiglie di socket
+
+Ogni famiglia ha una serie di stili di comunicazione differenti:
+
+- Internet socket: permette il trasferimento dati tra processi posti su macchine remote
+- Unix Domain Socket: permette il trasferimento di dati tra processi sulla stessa macchina Unix
+
+## Tipi di socket
+
+A seconda di come sono organizzati i socket abbiamo 3 tipi di socket:
+
+- [Stream socket](Tepsit5A.md/#stream-socket)
+- [Datagram socket](Tepsit5A.md/#datagram-socket)
+- [Raw socket](Tepsit5A.md/#raw-socket)
+
+### Stream socket
+
+Basato su un flusso di byte in entrata. Funziona in questo modo:
+
+1. Il server si mette in ascolto in attesa di collegamento
+2. Il client si pone in coda sul socket del server, e quando viene accettato, il server inizia la trasmissione dati
+3. Alla creazione della trasmissione, la porta della connessione viene spostata dalla porta ricevente
+
+Un esempio molto largo di questo tipo di socket e' il [**Protocollo TCP**](../Sistemi/Sistemi.md#tcp)
+
+### Datagram socket
+
+Flusso di byte che non garantisce l'ordine di arrivo dei pacchetti, quindi basato su [Protocollo UDP](../Sistemi/Sistemi.md#udp)
+
+### Raw socket
