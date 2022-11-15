@@ -4,6 +4,13 @@
 
 ---
 
+Argomenti per il compito:
+
+- [Sistemi distribuiti](Tepsit5A.md#cosa-sono-i-sistemi-distribuiti)
+- [Modello client-server](Tepsit5A.md#modello-client-server-base)
+- [Architettura a strati](Tepsit5A.md#architettura-a-strati)
+- [Socket](Tepsit5A.md#socket)
+
 Parte teorica:
 
 - **Architettura di rete**
@@ -106,9 +113,12 @@ La comunicazioni in questo modello avviene tramite [Socket](./Tepsit5A.md#socket
 
 I calcolatori lavorano in parallelo per ottenere una gran potenza di calcolo senza aver bisogno di spendere troppo.
 
+- **Cluster**: macchine uguali
+- **Grid**: macchine differenti
+
 Struemnto per creazione Cluster: **ParallelKnoppix**
 
-## Architettura WEB-centrie
+## Architettura WEB-centric
 
 ---
 
@@ -117,6 +127,8 @@ Sistema distribuito gestito tramite il web
 ## Middleware
 
 ---
+
+**!!IMPORTANTE!!**<br>
 
 E' un software che si pone come livello intermedio che si pone tra applicazioni e sistema operativo, che gestice alcune operazioni.
 
@@ -136,9 +148,9 @@ Ogni risorsa viene vista come oggetto, dunque vi e' un gestore che le distribuis
 
 Suddivisa in:
 
-- Front-end - GUI per l'utente (Presentation Layer)
-- Middle tier - Elaborazione (Resource Managment Layer)
-- Back-end - Accesso ai dati/risorse (Business Logic Layer)
+- **Front-end** - GUI per l'utente (Presentation Layer) / Client
+- **Middle tier** - Elaborazione (Resource Managment Layer) / Middleware
+- **Back-end** - Accesso ai dati/risorse (Business Logic Layer) / Server
 
 ### Architettura a 1 livello
 
