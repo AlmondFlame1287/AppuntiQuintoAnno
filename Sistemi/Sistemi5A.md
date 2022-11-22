@@ -85,7 +85,7 @@ E' un server per il quale **transita il traffico di rete** per darci varie funzi
 
 Informazioni che il sito web salva sul nostro computer. Possono essere usati per **scopi utili** e per **scopi pubblicitari**.
 
-## Crittografia
+# Crittografia
 
 ---
 
@@ -123,3 +123,47 @@ Nel 1999 venne introdotto il 3-DES, il quale usava 3 chiavi diverse e faceva pas
 ### Limiti della crittazione simmetrica
 
 I limiti della crittazione simmetrica sono tanti, in quanto per criptare e decriptare un messaggio, sia il mittente che il destinatario devono avere la stessa chiave. Cio' significa che per essere in possesso della stessa chiave bisogna o mandarla tramite posta elettronica scomponendola in parti, cosa assolutamente non sicura perche' puo' essere sempre ricomposta, oppure andare di persona a consegnare la chiave. Questo la rende praticamente inutilizzabile in campo militare, dato che la chiave non puo' essere consegnata in maniera semplice e veloce.
+
+## Le VLAN
+
+---
+
+### Cos'e'?
+
+La VLAN e' un tipo di LAN che puo' essere divisa in modo da ridurre i costi, le collisioni e il traffico sulla rete. Ogni VLAN e' confinata al livello 2 mentre la comunicazione avviene al livello 3 del protocollo ISO/OSI.
+
+### Quali sono i vantaggi di avere una VLAN?
+
+I vantaggi sono i seguenti:
+
+- Agilita' di manutenzione, in quanto la rete puo' essere gestita in remoto
+- Riduzione del traffico, in quanto ogni rete virtuale possiede uno spazio a se' stante
+- Economicita', poiche' non c'e' bisogno di comprare dei router e degli switch per dividere fisicamente la rete
+- Scalabilita', in quanto si possono aggiungere e rimuovere terminali in una manciata di secondi
+- Ottimizzazione delle infrastrutture
+- Possibilita' di estensione
+
+### Come possono essere realizzate le VLAN?
+
+Vi sono principalmente due modi di realizzarle:
+
+- Port-based VLAN
+  - Si puo' comunicare con la VLAN solo tramite l'access port
+- Tagged VLAN
+  - Si possono utilizzare piu' VLAN su una sola interfaccia
+
+### Come sono composte le VLAN?
+
+Sono formate da:
+
+- Un nome
+- Un identificatore unico (VID)
+- Un blocco di indirizzi IP
+
+### Cosa sono le porte ibride?
+
+Le porte ibride sono porte che devono essere utilizzate in modalita' tagged e untagged in modo da permettere allo switch di eseguire diverse operazioni:
+
+- Port-ingress: deve riconoscere il tipo di VLAN di appartenenza
+- Port-forwarding: si applicano le regole del forwarding e identifica la porta di uscita
+- Port-egress: usata per inserire/rimuovere i tag
