@@ -84,3 +84,42 @@ E' un server per il quale **transita il traffico di rete** per darci varie funzi
 ---
 
 Informazioni che il sito web salva sul nostro computer. Possono essere usati per **scopi utili** e per **scopi pubblicitari**.
+
+## Crittografia
+
+---
+
+### Cos'e'?
+
+La crittografia e' un sistema che permette di trasformare dei caratteri in altri, permettendo cosi' di trascrivere un messaggio segreto.
+
+### Cosa significa cifratura?
+
+La cifratura e' quel processo che permette di tradurre i messaggi in messaggi segreti
+
+### Come funziona la crittazione simmetrica?
+
+In base ad un algoritmo, il testo in entrata viene trasformato seguendo alcune regole, note sia al mittente che al destinatario. Questo permette sia la crittazione del testo, sia la decrittazione.
+
+Un esempio di prima cifratura nella storia e' il "Cifrario di Cesare", il quale spostava di una o piu' lettere il messaggio. Per capirci, invece di scrivere A, questo scriveva B o C, e dunque una parola comprensibile tipo "ciao" diveniva "ekcq"
+
+### Algoritmi di crittazione simmetrica
+
+#### DES
+
+Il DES e' uno degli algoritmi piu' anziani della crittografia simmetrica. E' basato su una chiave segreta di 64 bit, 8 di controllo e 56 utili. Il suo funzionamento e' abbastanza semplice:
+
+1. Si suddivide il testo in blocchi da 8 byte
+2. Si traspongono i 64 bit con la chiave da 56 bit
+3. Per 16 volte, alcuni bit vengono sostituiti
+4. Si traspongono i bit in modo inverso a quello iniziale
+
+Questo sistema di crittografia venne ritenuto molto sicuro, fin quando nel 1998 venne abbattuto da un calcolatore costato solo 250k $
+
+#### 3-DES
+
+Nel 1999 venne introdotto il 3-DES, il quale usava 3 chiavi diverse e faceva passare il testo criptato in 3 algoritmi DES.
+
+### Limiti della crittazione simmetrica
+
+I limiti della crittazione simmetrica sono tanti, in quanto per criptare e decriptare un messaggio, sia il mittente che il destinatario devono avere la stessa chiave. Cio' significa che per essere in possesso della stessa chiave bisogna o mandarla tramite posta elettronica scomponendola in parti, cosa assolutamente non sicura perche' puo' essere sempre ricomposta, oppure andare di persona a consegnare la chiave. Questo la rende praticamente inutilizzabile in campo militare, dato che la chiave non puo' essere consegnata in maniera semplice e veloce.
