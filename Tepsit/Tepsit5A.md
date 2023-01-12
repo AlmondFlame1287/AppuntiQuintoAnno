@@ -4,14 +4,14 @@
 
 ---
 
-Argomenti per il compito:
+### Argomenti per il compito:
 
 - [Sistemi distribuiti](Tepsit5A.md#cosa-sono-i-sistemi-distribuiti)
 - [Modello client-server](Tepsit5A.md#modello-client-server-base)
 - [Architettura a strati](Tepsit5A.md#architettura-a-strati)
 - [Socket](Tepsit5A.md#socket)
 
-Parte teorica:
+### Parte teorica:
 
 - **Architettura di rete**
 - **Sistemi distrubiti**
@@ -22,7 +22,7 @@ Parte teorica:
 - **Socket e comunicazioni con protocollo TCP e UDP**
 - [**Servlet**](./Tepsit5A.md#servlet)
 
-Parte pratica:
+### Parte pratica:
 
 - **Applicazioni Java in rete** (Di solito nei PON)
 
@@ -198,7 +198,7 @@ A seconda di come sono organizzati i socket abbiamo 3 tipi di socket:
 
 - [Stream socket](Tepsit5A.md/#stream-socket)
 - [Datagram socket](Tepsit5A.md/#datagram-socket)
-- [Raw socket](Tepsit5A.md/#raw-socket)
+- Raw socket
 
 ### Stream socket
 
@@ -208,10 +208,14 @@ Basato su un flusso di byte in entrata. Funziona in questo modo:
 2. Il client si pone in coda sul socket del server, e quando viene accettato, il server inizia la trasmissione dati
 3. Alla creazione della trasmissione, la porta della connessione viene spostata dalla porta ricevente
 
-Un esempio molto largo di questo tipo di socket e' il [**Protocollo TCP**](../Sistemi/Sistemi.md#tcp)
+Un esempio molto largo di questo tipo di socket e' il [**Protocollo TCP**](../Sistemi/Sistemi4A.md#tcp)
 
 ### Datagram socket
 
 Flusso di byte che non garantisce l'ordine di arrivo dei pacchetti, quindi basato su [Protocollo UDP](../Sistemi/Sistemi.md#udp)
 
-### Raw socket
+---
+
+## Per cosa viene utilizzato il multicast?
+
+Il **multicast** serve per trasmettere informazioni a piu' macchine, e per farlo, si usa un indirizzo IP di **classe D** che successivamente viene convertito in un indirizzo normale (classe A, B, C).

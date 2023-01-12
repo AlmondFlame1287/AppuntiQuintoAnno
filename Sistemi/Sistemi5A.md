@@ -167,3 +167,45 @@ Le porte ibride sono porte che devono essere utilizzate in modalita' tagged e un
 - Port-ingress: deve riconoscere il tipo di VLAN di appartenenza
 - Port-forwarding: si applicano le regole del forwarding e identifica la porta di uscita
 - Port-egress: usata per inserire/rimuovere i tag
+
+# Crittografia Asimmetrica
+
+---
+
+## Che succede se qualcuno intercetta il messaggio?
+
+Il messaggio non puo' essere compreso, poiche' per decifrarlo serve la chiave privata.
+
+## Quante modalita' di cifratura ci sono??
+
+- **Confidenziale**
+  - Sono garantite la riservatezza e l'integrita' del messaggio.
+- **Autenticazione**
+  - Garantisce l'integrita' e si e' sicuri del mittente del messaggio.
+
+### Che cos'e' un hash?
+
+E' il calcolo di una stringa univoca che corrisponde unicamente ad un testo. Nel caso in cui anche solo una lettera fosse cambiata, l'**hash** sarebbe differente.
+
+Algoritmi usati:
+
+- MD5
+- SHA256
+- SHA512
+
+## L'RSA
+
+### Passaggi
+
+- Scegliere due numeri primi $np1, np2$
+- Calcolare n = $np1 * np2$
+- Calcolare m = $(np1 - 1) * (np2 - 1)$
+- Scegliere un numero $e < m$ coprimo
+- Calcolare d = $1 \mod m \over e$
+- Kpub = (e, n) Kpriv = (d, n)
+
+### Cifratura
+
+$c = mcifrato = 9^e = n$
+
+### Decifratura
