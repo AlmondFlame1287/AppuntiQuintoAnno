@@ -179,9 +179,13 @@ Il messaggio non puo' essere compreso, poiche' per decifrarlo serve la chiave pr
 ## Quante modalita' di cifratura ci sono??
 
 - **Confidenziale**
+  - Chiave pubblica cripta, chiave privata decripta
   - Sono garantite la riservatezza e l'integrita' del messaggio.
 - **Autenticazione**
+  - Chiave privata cripta, chiave pubblica decripta
   - Garantisce l'integrita' e si e' sicuri del mittente del messaggio.
+- **Ibrida**
+  - Si usano entrambi i passaggi di cifratura e decifratura
 
 ### Che cos'e' un hash?
 
@@ -193,7 +197,27 @@ Algoritmi usati:
 - SHA256
 - SHA512
 
+## La firma digitale
+
+E' basata su un sistema di codifica crittografica a chiavi asimmetriche.
+Di solito e' un dispositov esterno, come una smart card, una business key.
+
+### Come funziona?
+
+- Si prende un documento
+- Calcolo dell'[hash](./Sistemi5A.md#che-cose-un-hash)
+- Si cifra con algoritmo asimmetrico
+- Si invia il documento cifrato e firmato
+
 ## L'RSA
+
+## Per cosa e' usato?
+
+- Autenticita'
+- La **non falsicabilita'** della frma
+- La **non riutilizzabilita'** della firma
+- La **non alterabilita'**della firma
+- La **non ripudiabilita'** della firma
 
 ### Passaggi
 
@@ -206,6 +230,6 @@ Algoritmi usati:
 
 ### Cifratura
 
-$c = mcifrato = 9^e = n$
+$m = 9$
 
-### Decifratura
+$c = mcifrato = m^e = n$
