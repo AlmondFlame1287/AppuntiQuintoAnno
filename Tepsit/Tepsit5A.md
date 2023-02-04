@@ -214,8 +214,49 @@ Un esempio molto largo di questo tipo di socket e' il [**Protocollo TCP**](../Si
 
 Flusso di byte che non garantisce l'ordine di arrivo dei pacchetti, quindi basato su [Protocollo UDP](../Sistemi/Sistemi.md#udp)
 
----
-
 ## Per cosa viene utilizzato il multicast?
 
 Il **multicast** serve per trasmettere informazioni a piu' macchine, e per farlo, si usa un indirizzo IP di **classe D** che successivamente viene convertito in un indirizzo normale (classe A, B, C).
+
+# Comunicazione dinamica con le pagine web
+
+---
+
+## Cos'e'?
+
+## Come vengono classificate?
+
+- Tramite URL
+  - [CGI](./Tepsit5A.md#cgi) (Common Gateway Interface)
+  - [Java servlet](./Tepsit5A.md#servlet)
+  - NSAPI
+- Tramite codice in HTML
+  - SSI-Apache
+  - ASP-Microsoft
+  - PHP
+  - Java Server Pages (JSP)
+
+### CGI
+
+Script eseguiti dal sistema operativo del server. Eseguito solo in risposta alla chiamata.
+
+## Servlet
+
+Script eseguiti dalla JVM. Al contrario delle CGI, il Servelt viene caricato in memoria, e rimane li' ad attendere una richiesta.
+
+### Cosa sono?
+
+Sono delle componenti scritti in Java che producono contenuto web dinamico, ovvero contenuto dove noi possiamo interagire.
+
+### Gestione delle richieste
+
+Dato che il container, ovvero l'ambiente di esecuzione delle servlet, si occupa della gestione delle suddette, questo fa si che lo sviluppatore si possa concentrare sullo sviluppo logico delle applicazioni web.
+
+### Flusso di esecuzione
+
+- Client invia una richiesta
+- Se si tratta di prima richiesta, allora si istanzia e si carica il servlet
+- Si attiva il thread che gestisce la comunicazione tra client e server
+- Il server invia al thread-serverlet la richiesta pervenutagli dal client
+- Il thread-serverlet costruisce la riposta e la inoltra al server
+- Il server invia la risposta al client
