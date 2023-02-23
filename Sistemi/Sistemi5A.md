@@ -211,12 +211,12 @@ Di solito e' un dispositov esterno, come una smart card, una business key.
 
 ## L'RSA
 
-## Per cosa e' usato?
+### Per cosa e' usato?
 
 - Autenticita'
 - La **non falsicabilita'** della frma
 - La **non riutilizzabilita'** della firma
-- La **non alterabilita'**della firma
+- La **non alterabilita'** della firma
 - La **non ripudiabilita'** della firma
 
 ### Passaggi
@@ -233,3 +233,32 @@ Di solito e' un dispositov esterno, come una smart card, una business key.
 $m = 9$
 
 $c = mcifrato = m^e = n$
+
+# Sicurezza delle reti
+
+---
+
+## Cos'e' la sicurezza informatica?
+
+Con sicurezza informatica si intende l'insieme dei prodotti, regole e protocolli per garantire la funzionalita' dei servizi durante delle catastrofi
+
+## La CIA
+
+- C: Confidenzialita' dei dati
+- I: Integrita' dei dati
+- A: Disponibilita' dei dati
+
+## Minacce
+
+Le minacce possono essere:
+
+- **Naturali**:
+  - Incendi
+  - Terremoti
+  - Tornadi
+  - Agenti impossibili da prevenire
+- **Umane**:
+  - Attacchi interni:
+    - Dipendenti malintenzionati
+  - Attacchi esterni:
+    - Rubare dati
