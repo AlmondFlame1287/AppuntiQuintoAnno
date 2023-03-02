@@ -244,9 +244,9 @@ Con sicurezza informatica si intende l'insieme dei prodotti, regole e protocolli
 
 ## La CIA
 
-- C: Confidenzialita' dei dati
-- I: Integrita' dei dati
-- A: Disponibilita' dei dati
+- **C**: Confidenzialita' dei dati
+- **I**: Integrita' dei dati
+- **A**: Disponibilita' dei dati
 
 ## Minacce
 
@@ -259,6 +259,61 @@ Le minacce possono essere:
   - Agenti impossibili da prevenire
 - **Umane**:
   - Attacchi interni:
+    - Piu' pericolosi
     - Dipendenti malintenzionati
   - Attacchi esterni:
-    - Rubare dati
+    - Attacchi spoofing
+      - IP spoofing: qualcuno si sostituisce ad un host
+      - Data spoofing: si inseriscono / modificano i dati durante il loro transito in rete
+    - Packet sniffing
+    - DoS - DDoS (Denial of Service)
+
+## Aspetti principali
+
+- **Autenticazione**
+- **Autorizzazione**
+  - Una volta autenticato, l'utente avra' dei diversi permessi.
+  - Importante per la sicurezza
+- **Riservatezza**
+  - Informazioni leggibili solo agli utenti autorizzati
+- **Disponibilita'**
+  - Informazioni sempre disponibili, non importa cosa succede sul sistema
+- **Integrita'**
+- **Paternita'**
+  - Ogni file e' associato ad un utente proprietario.
+  - Usato per tenere traccia di alcuni fattori
+
+## Valutazione dei rischi
+
+In un'azienda che usa l'informatica in maniera pesante vi saranno due fasi essenziali:
+
+1. Analisi dei rischi
+   - Valutazione di alcuni rischi in base agli asset
+   - Stima della probabilita' di alcuni eventi
+2. Gestione della problematica
+
+**Asset**: un qualsiasi bene dell'azienda
+
+## Com'e' formato un attacco informatico?
+
+**Obiettivo + Metodo + Vulnerabilita' = Attacco**
+
+### Tipi di attacchi in base al danno
+
+- Attacchi dimostrativi
+  - Non pericolosi, per dimostrare la bravura dell'hacker
+- Attacchi criminali
+  - Rubare i dati
+
+### Tipi di attacchi Criminali in base alla partecipazione dell'hacker
+
+- **Passivi**:
+  - Sniffing
+- **Attivi**:
+  - Sostituzione di host
+  - Produzione
+    - Virus
+    - Worm
+    - Malware
+  - Intrusione
+  - Phishing
