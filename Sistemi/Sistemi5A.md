@@ -234,9 +234,9 @@ $m = 9$
 
 $c = mcifrato = m^e = n$
 
-# Sicurezza delle reti
-
 ---
+
+# Sicurezza delle reti
 
 ## Cos'e' la sicurezza informatica?
 
@@ -288,7 +288,7 @@ Le minacce possono essere:
 In un'azienda che usa l'informatica in maniera pesante vi saranno due fasi essenziali:
 
 1. Analisi dei rischi
-   - Valutazione di alcuni rischi in base agli asset
+   - Valutazione di alcuni rischi in base agli **asset**
    - Stima della probabilita' di alcuni eventi
 2. Gestione della problematica
 
@@ -297,6 +297,10 @@ In un'azienda che usa l'informatica in maniera pesante vi saranno due fasi essen
 ## Com'e' formato un attacco informatico?
 
 **Obiettivo + Metodo + Vulnerabilita' = Attacco**
+
+Obiettivo: oggetto da attaccare
+Metodo: tipologia di attacco
+Vulnerabilita': cosa sfruttare
 
 ### Tipi di attacchi in base al danno
 
@@ -317,3 +321,51 @@ In un'azienda che usa l'informatica in maniera pesante vi saranno due fasi essen
     - Malware
   - Intrusione
   - Phishing
+
+## I tre pilastri della sicurezza:
+
+- **Prevenzione**
+  - Connessioni tramite SSL
+  - Firewall
+  - VPN
+- **Rilevazione**
+  - monitoraggio e controllo degli accessi
+- **Investigazione**
+  - analisi dei dati rubati / danneggiati
+
+---
+
+# Sicurezza della posta elettronica
+
+## Minacce alla posta elettronica
+
+- Attacco all'integrita'
+- Attacco all'autenticazione
+- Attacco al non ripudio
+- Attacco alla riservatezza
+
+## Il protocollo S/MIME
+
+### Servizi offerti
+
+- Firme digitali
+- Crittografia dei messaggi
+
+### Protocolli usati
+
+- SHA1
+- DSS
+- RSA
+- 3DES
+
+---
+
+# Sicurezza delle connessioni con SSL/TLS
+
+## Cosa puo' fare?
+
+A livello di sessione puo' permettere:
+
+- Privatezza del collegamento
+- Autenticazione
+- Affidabilita'
