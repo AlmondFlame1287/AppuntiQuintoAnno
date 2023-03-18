@@ -238,7 +238,7 @@ Il **multicast** serve per trasmettere informazioni a piu' macchine, e per farlo
 
 ### CGI
 
-Script eseguiti dal sistema operativo del server. Eseguito solo in risposta alla chiamata.
+Script eseguiti dal sistema operativo del server. Eseguito solo in risposta alla chiamata. Nel caso in cui esso venisse eseguito piu' volte, dovra' essere ricaricato in memoria. Aumenta il tempo di latenza.
 
 ## Servlet
 

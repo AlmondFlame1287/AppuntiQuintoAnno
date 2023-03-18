@@ -369,3 +369,59 @@ A livello di sessione puo' permettere:
 - Privatezza del collegamento
 - Autenticazione
 - Affidabilita'
+
+## Quali sono i soggetti coinvolti?
+
+- Possessore della carta
+- Distributore di carta di credito
+- Commerciante
+- Acquisitore
+- Gateway di pagamento
+
+## Come funziona il pagamento?
+
+- Il possessore invia una richiesta di acquisto
+- Il venditore contatta il gateway di pagamento
+- Il gateway invia una risposta al venditore
+- Il venditore consegna la merce richiesta al possessore della carta
+
+# La difesa tramite Firewall
+
+## Cos'e' il firewall?
+
+Sistema hardware o software dedicato alla difesa e al filtraggio del traffico in entrata e in uscita di una rete.
+
+## Come funziona?
+
+Durante la fase di filtraggio, il firewall fa passare solo tipi di pacchetti che soddisfano determinate regole.
+
+## I tre principi fondamentali
+
+- Il firewall deve essere l'unico punto di contatto della rete interna con quella esterna
+- Solo il traffico autorizzato puo' attraversare il firewall
+- Il firewall deve essere un sistema altamente sicurod
+
+## Come si classificano i firewall?
+
+### In base al traffico filtrato
+
+- Ingress
+  - Collegamenti in ingresso
+- Egress
+  - Collegamenti in uscita
+
+---
+
+### In base a quanti terminali puo' essere connesso
+
+- Personal firewall
+  - Protezione di un solo computer
+- Network firewall
+  - Controlla tutto il traffico della rete
+
+---
+
+### Tipo di filtraggio
+
+- Filtro di pacchetti IP
+- Server proxy
