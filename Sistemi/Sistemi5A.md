@@ -370,7 +370,7 @@ A livello di sessione puo' permettere:
 - Autenticazione
 - Affidabilita'
 
-## Quali sono i soggetti coinvolti?
+## Quali sono i soggetti coinvolti nel protocollo SET?
 
 - Possessore della carta
 - Distributore di carta di credito
@@ -399,29 +399,52 @@ Durante la fase di filtraggio, il firewall fa passare solo tipi di pacchetti che
 
 - Il firewall deve essere l'unico punto di contatto della rete interna con quella esterna
 - Solo il traffico autorizzato puo' attraversare il firewall
-- Il firewall deve essere un sistema altamente sicurod
+- Il firewall deve essere un sistema altamente sicuro
 
 ## Come si classificano i firewall?
 
-### In base al traffico filtrato
+#### In base al traffico filtrato
 
 - Ingress
   - Collegamenti in ingresso
 - Egress
   - Collegamenti in uscita
 
----
-
-### In base a quanti terminali puo' essere connesso
+#### In base a quanti terminali puo' proteggere
 
 - Personal firewall
   - Protezione di un solo computer
 - Network firewall
   - Controlla tutto il traffico della rete
 
----
-
-### Tipo di filtraggio
+#### Tipo di filtraggio
 
 - Filtro di pacchetti IP
 - Server proxy
+
+### Tipi di firewall
+
+- Packet-filtering router
+  - Livello di rete
+  - 2 tipi di regole
+    1. Deny -> Declina con messaggio d'errore
+       - Discard/Reject -> Declina senza messaggio d'errore
+    2. Permit -> Permetti
+  - Vantaggi:
+    - Trasparenza
+    - Velocita' perche' lavora a basso livello
+    - Si deve configurare solo il firewall
+  - Svantaggi
+    - Vulnerabilita' a:
+      - Attacchi di alto livello
+      - Mancanza di servizi aggiuntivi
+      - IP Spoofing
+      - Source routing
+      - Attacchi a frammenti piccoli
+- Stateful inspection firewally
+  - Crea una tabella per ogni connessione attiva
+  - Traffico controllato solo all'inizio della connessione
+- Circuit gateway
+- Proxy server
+
+Nelle aziende alcuni vengono combinati per una maggiore efficienza.
