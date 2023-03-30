@@ -448,3 +448,26 @@ Durante la fase di filtraggio, il firewall fa passare solo tipi di pacchetti che
 - Proxy server
 
 Nelle aziende alcuni vengono combinati per una maggiore efficienza.
+
+# Reti wireless
+
+## Principali benefici
+
+- Mobilita'
+- Connettivita' a breve termine
+- Installazione dove il cablaggio puo' essere difficoltoso
+
+## Tipi di reti wireless
+
+- Reti radiomobili -> Connessione dati
+  - Tante reti sul territorio
+    - Determinate aree
+  - 3 Funzionalita'
+    - Localizzazione
+    - Registrazione -> Identificazione e autenticazione
+    - Handover -> passaggio da una cella all'altra
+- WLAN -> Rete locale Wireless
+  - Standard 802.11x, dove x puo' essere una lettera da 'A' a 'N'
+- BAN -> Body Area Network
+  - Tutte le reti che indossiamo
+    - Smartwatch
