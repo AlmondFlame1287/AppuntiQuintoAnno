@@ -260,3 +260,23 @@ Dato che il container, ovvero l'ambiente di esecuzione delle servlet, si occupa 
 - Il server invia al thread-serverlet la richiesta pervenutagli dal client
 - Il thread-serverlet costruisce la riposta e la inoltra al server
 - Il server invia la risposta al client
+
+# Database
+
+Per una spiegazione migliore [clicca qui](../Info/Database.md#database)
+
+## JDBC
+
+Driver per la connessione ai DB in Java.
+Le chiamate vengono tradotte in ODBC prima di essere eseguite
+
+## API native
+
+Le API native invece, al contrario del driver JDBC, sono usate per le chiamate che non vengono tradotte in ODBC.
+
+## Database embedded
+
+## Cosa sono?
+
+Database snelli, strettamente legati alle applicazioni. <br>
+Un esempio di questi puo' essere **SQLite** (usato per whatsapp e altre app di messaggistica)
