@@ -471,3 +471,74 @@ Nelle aziende alcuni vengono combinati per una maggiore efficienza.
 - BAN -> Body Area Network
   - Tutte le reti che indossiamo
     - Smartwatch
+
+## Su quanti canali su puo' trasmettere?
+
+- 13 Canali
+  - La velocita' cambia a seconda dell'area e a seconda della distanza dall'access point
+
+## Protocolli wireless
+
+Il protocollo base e' 802.11, ma ve ne sono diversi
+
+- 802.11b
+  - Prima versione
+- 802.11a
+  - Velocita' massima 54 mbps
+- 802.11g
+  - Alcuni miglioramenti
+- 802.11i
+  - Maggiore velocita'
+  - Maggiore sicurezza
+- 802.11ac
+  - Diverse modalita' di trasmissione
+
+# Crittografia e configurazione nelle reti wireless
+
+Si deve garantire:
+
+- Integrita' dei dati
+- Autenticazione
+
+## Tipologie di attacchi
+
+- Eavesdropping
+  - Ascolto dei pacchetti, ed eventuali modifiche
+- Accessi non autorizzati
+- Danni materiali
+  - Danni all'hardware
+
+## Tipologie di crittografia di dati
+
+- WEP
+  - A chiave simmetrica
+  - Chiave di sessione
+  - Debole
+- WPA
+  - Piu' sicuro
+  - Basato su 802.1X -> server RADIUS
+  - WPA/PSK -> PSK = Passphrase -> password
+
+## Come funziona un server RADIUS?
+
+- Client entra nel raggio d'azione dell'access point
+- Client si identifica
+- Il server radius richiede altre credenziali
+- Il client invia le proprie credenziali
+- Il server RADIUS verifica le credenziali
+- Il server manda una chiave all'access point
+- L'access point trasmette la chiave al client
+
+## Tecnologie trasmissive
+
+- Tecnologie radio
+  - 2.4 GHz
+  - 5 GHz
+  - Sistema che evita le collisioni
+  - Attenuate dai materiali
+    - Legno -> Attenuazione debole
+    - Matton -> Attenuazione media
+    - Metallo -> Attenuazione molto alta
+  - Attenuate da altre sorgenti
+  - Scattering -> onde **ritardate**
+- Tecnologie ottiche
