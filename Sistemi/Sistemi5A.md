@@ -493,6 +493,10 @@ Il protocollo base e' 802.11, ma ve ne sono diversi
 - 802.11ac
   - Diverse modalita' di trasmissione
 
+### Da quante parti e' formato il frame 802.1x?
+
+3 parti
+
 # Crittografia e configurazione nelle reti wireless
 
 Si deve garantire:
@@ -542,3 +546,37 @@ Si deve garantire:
   - Attenuate da altre sorgenti
   - Scattering -> onde **ritardate**
 - Tecnologie ottiche
+
+# Applicazioni distribuite
+
+## Da quante parti sono formate?
+
+- Front-end -> livello presentazione
+- Mid-end -> logica applicativa
+- Back-end -> logica di accesso
+
+## In quanti livelli possiamo distinguerle?
+
+- Single tiered
+- Two tiered
+- Three tiered
+
+[Per approfondire](../Tepsit/Tepsit5A.md#architettura-a-strati)
+
+## Cosa sono le server farm?
+
+Luoghi dove vengono installati un insieme di server.
+
+Possono essere di due tipi:
+
+- Cloning
+  - Stesse applicazioni e programmi su tutte le macchine
+  - Sistema di load-balancing
+    - RACS -> Servizi clonati affidabili
+      - Shared nothing
+      - Shared disk
+    - Divide il lavoro tra tutte la macchine
+- Partitioning
+  - Ogni macchina svolge un compito diverso
+
+Questi due tipi di server possono essere usati assieme.
