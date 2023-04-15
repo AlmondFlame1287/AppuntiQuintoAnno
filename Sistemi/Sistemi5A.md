@@ -572,11 +572,63 @@ Possono essere di due tipi:
 - Cloning
   - Stesse applicazioni e programmi su tutte le macchine
   - Sistema di load-balancing
-    - RACS -> Servizi clonati affidabili
-      - Shared nothing
-      - Shared disk
     - Divide il lavoro tra tutte la macchine
+  - RACS -> Servizi clonati affidabili
+    - Shared nothing
+    - Shared disk
 - Partitioning
   - Ogni macchina svolge un compito diverso
 
 Questi due tipi di server possono essere usati assieme.
+
+## Livelli di sito
+
+1. Read-only
+2. Interazione base col sito (Download di file dal sito)
+3. Interazione maggiore (Download e upload dal sito)
+4. Transazioni online
+
+## Modalita' di accesso ai siti
+
+- Sito internet
+- Sito intranet
+  - Accesso solo alle aziende
+- Sito extranet
+  - Accesso alla rete da parte di altri utenti
+
+# Architettura dei sistemi web
+
+Composta da:
+
+- Web server
+- Script engine
+- Application server
+- DBMS server
+
+[Per approfondire](../Tepsit/Tepsit5A.md#client-server)
+
+# Amministrazione di una rete
+
+## Installazione dei componenti software
+
+- Scelta del sistema operativo
+- Configurazione dei protocolli di rete
+
+## Autenticazione del client
+
+- User to host
+- Host to host
+- User to user
+
+### Tecniche usate
+
+- Something you are
+  - Qualcosa che sei -> Autenticazione biometrica
+- Something you know
+  - Qualcosa che sai -> Password
+- Something you have
+  - Qualcosa che hai -> token / chiave d'accesso fisica
+
+## Servizi di directory
+
+Metodi per organizzare gli utenti in gruppi, dove solo un determinato gruppo puo' accede ad una determinata directory
