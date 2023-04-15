@@ -276,7 +276,19 @@ Le API native invece, al contrario del driver JDBC, sono usate per le chiamate c
 
 ## Database embedded
 
-## Cosa sono?
+### Cosa sono?
 
 Database snelli, strettamente legati alle applicazioni. <br>
 Un esempio di questi puo' essere **SQLite** (usato per whatsapp e altre app di messaggistica)
+
+# JSP
+
+## Cosa sono?
+
+Ibrido tra tipo di programmazione dinamica tipo PHP e programmazione server
+
+## Come funziona?
+
+- Estrae i comandi Java
+- Invia la richesta http
+- Spedisce il risultato tramite il browser
