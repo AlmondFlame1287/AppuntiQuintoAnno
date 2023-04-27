@@ -605,6 +605,8 @@ Composta da:
 - Application server
 - DBMS server
 
+Zona DMZ = Zona demilitarizzata, il confine tra la rete interna e quella esterna
+
 [Per approfondire](../Tepsit/Tepsit5A.md#client-server)
 
 # Amministrazione di una rete
@@ -617,8 +619,11 @@ Composta da:
 ## Autenticazione del client
 
 - User to host
+  - Host autentica gli utenti
 - Host to host
+  - Host autentica altri host
 - User to user
+  - User autentica e si accerta che l'altro sia effettivamente chi dice di essere
 
 ### Tecniche usate
 
