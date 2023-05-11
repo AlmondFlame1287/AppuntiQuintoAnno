@@ -637,3 +637,29 @@ Zona DMZ = Zona demilitarizzata, il confine tra la rete interna e quella esterna
 ## Servizi di directory
 
 Metodi per organizzare gli utenti in gruppi, dove solo un determinato gruppo puo' accede ad una determinata directory
+
+# DNS
+
+Servizio di directory che riguarda la trasformazione degli hostname in indirizzi IP
+
+# I domini
+
+Permessi e diritti differenti per un determinato gruppo di utenti
+
+## Albero di domini
+
+Gerarchia di domini
+
+# Active directory
+
+## Cos'e'?
+
+Un database integrato per la serie Windows Server
+
+## A cosa serve?
+
+Serve a controllare e definire le autorizzazioni di accesso degli utenti e delle risorse
+
+## Cosa sono i criteri di gruppo?
+
+I criteri di gruppo consentono agli amministratori di sistema di definire e controllare le impostazioni dei computer e degli utenti in modo centralizzato, rendendo più facile la gestione di grandi gruppi di computer in una rete.
